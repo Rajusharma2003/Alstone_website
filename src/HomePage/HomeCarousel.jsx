@@ -6,7 +6,7 @@ import carouselData from './HomeCarouselData';
 
 const items = carouselData.map((item) => (
     <img
-      className="w-full object-cover" // Responsive classes
+      className="w-full object-cover h-[770px]" // Responsive classes
       src={item.image}
       alt="image"
     />

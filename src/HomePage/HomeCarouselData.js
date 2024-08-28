@@ -1,24 +1,25 @@
-const  carouselData = [
-    {
-        image : "https://www.alstonejindal.in/image/steel-sink1.jpg" 
-    },
-    {
-        image : "https://www.alstonejindal.in/image/steel-sink1.jpg" 
-    },
-    {
-        image : "https://www.alstonejindal.in/image/steel-sink1.jpg" 
-    },
-    {
-        image : "https://www.alstonejindal.in/image/steel-sink1.jpg" 
-    },
-    {
-        image : "https://www.alstonejindal.in/image/steel-sink1.jpg" 
-    },
-    {
-        image : "https://www.alstonejindal.in/image/steel-sink1.jpg" 
-    },
+import bannerImg from '../Images/banner1.jpg';
 
+const carouselData = [
+    {
+        image: bannerImg
 
-]
+    },
+    {
+        image: bannerImg
 
-export default carouselData
+    },
+    {
+        image: bannerImg
+
+    },
+    {
+        image: bannerImg 
+    },
+    
+    
+
+    
+];
+
+export default carouselData;

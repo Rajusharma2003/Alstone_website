@@ -7,9 +7,8 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './Component/Navbar/Navbar';
 import Home from './HomePage/HomePage';
 import About from './Component/About/About';
-import Product from './Component/Product/Product';
 import Contact from './Component/Contact/Contact';
-import Faucets from './Component/Product/ProductDetails/Faucets';
+import Faucets from './Component/Product/ProductDetails/Faucets/Faucets';
 import BathFitting from './Component/Product/ProductDetails/BathFitting';
 import AboutCompany from './Component/About/AboutDetails/AboutCompany';
 import Achivements from './Component/About/AboutDetails/Achivements';
@@ -27,7 +26,6 @@ function App() {
     <Routes>
       <Route path="/" element={<Home/>} />
       <Route path="/about" element={<About />} />
-      <Route path="/product" element={<Product />} />
       <Route path="/contact" element={<Contact/>} />
       <Route path="/faucets" element={<Faucets/>} />
       <Route path="/bathFittings" element={<BathFitting/>} />

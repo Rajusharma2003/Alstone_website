@@ -25,7 +25,7 @@ const Navbar = () => {
       if (!ref.current.contains(document.activeElement)) {
         setDropdownState(false);
       }
-    }, 200); // Delay for better user experience
+    }, 100); // Delay for better user experience
 
     setTimeoutState(timeoutId);
   };
@@ -39,10 +39,10 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-between h-[120px]">
             {/* Mobile menu button */}
-            <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+            <div className="absolute inset-y-0 left-1/2 flex items-center sm:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+                className="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded={isOpen}
               >
@@ -94,7 +94,7 @@ const Navbar = () => {
                   />
                 </Link>
               </div>
-              <div className="hidden sm:flex sm:ml-6 space-x-4 h-9 mt-8">
+              <div className="hidden sm:flex sm:ml-6 space-x-4 h-10 mt-8">
                 <Link
                   to="/"
                   className="text-black hover:bg-red-700 hover:text-white px-4 py-2 rounded-md text-lg font-medium transition-all duration-200 ease-in-out"
