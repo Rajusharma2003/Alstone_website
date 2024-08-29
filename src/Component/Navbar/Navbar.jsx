@@ -1,4 +1,4 @@
-import React, { useState, useRef, useCallback } from 'react';
+import React, { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { FaCaretDown } from 'react-icons/fa';
 import TopPost from '../TopPost/TopPost';
@@ -22,10 +22,20 @@ const Navbar = () => {
 
   const handleMouseLeave = (setDropdownState, ref, setTimeoutState) => {
     const timeoutId = setTimeout(() => {
-      if (!ref.current.contains(document.activeElement)) {
-        setDropdownState(false);
-      }
-    }, 100); // Delay for better user experience
+      setDropdownState(false);
+    }, 200); // Increased delay for better user experience
+
+    setTimeoutState(timeoutId);
+  };
+
+  const handleFocus = (setDropdownState) => {
+    setDropdownState(true);
+  };
+
+  const handleBlur = (setDropdownState, setTimeoutState) => {
+    const timeoutId = setTimeout(() => {
+      setDropdownState(false);
+    }, 200);
 
     setTimeoutState(timeoutId);
   };
@@ -107,6 +117,8 @@ const Navbar = () => {
                   className="relative"
                   onMouseEnter={() => handleMouseEnter(setIsProductsOpen)}
                   onMouseLeave={() => handleMouseLeave(setIsProductsOpen, productsRef, setProductsTimeout)}
+                  onFocus={() => handleFocus(setIsProductsOpen)}
+                  onBlur={() => handleBlur(setIsProductsOpen, setProductsTimeout)}
                   ref={productsRef}
                 >
                   <button
@@ -138,6 +150,8 @@ const Navbar = () => {
                   className="relative"
                   onMouseEnter={() => handleMouseEnter(setIsAboutOpen)}
                   onMouseLeave={() => handleMouseLeave(setIsAboutOpen, aboutRef, setAboutTimeout)}
+                  onFocus={() => handleFocus(setIsAboutOpen)}
+                  onBlur={() => handleBlur(setIsAboutOpen, setAboutTimeout)}
                   ref={aboutRef}
                 >
                   <button
@@ -217,15 +231,16 @@ const Navbar = () => {
                 className="relative"
                 onMouseEnter={() => handleMouseEnter(setIsProductsOpen)}
                 onMouseLeave={() => handleMouseLeave(setIsProductsOpen, productsRef, setProductsTimeout)}
+                onFocus={() => handleFocus(setIsProductsOpen)}
+                onBlur={() => handleBlur(setIsProductsOpen, setProductsTimeout)}
+                ref={productsRef}
               >
-                <button
-                  className="text-black hover:bg-red-700 hover:text-white block px-4 py-2 rounded-md text-base font-medium flex items-center w-full"
-                >
+                <button className="text-black hover:bg-red-700 hover:text-white block px-4 py-2 rounded-md text-base font-medium flex items-center">
                   Products
                   <FaCaretDown className="ml-1" />
                 </button>
                 <div
-                  className={`absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg ${isProductsOpen ? "block" : "hidden"} z-40`}
+                  className={`absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg ${isProductsOpen ? "block" : "hidden"} z-40`}
                 >
                   <Link
                     to="/faucets"
@@ -234,7 +249,7 @@ const Navbar = () => {
                     Faucets
                   </Link>
                   <Link
-                    to="/bath-fittings"
+                    to="/bathittings"
                     className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white"
                   >
                     Bath Fittings
@@ -242,18 +257,19 @@ const Navbar = () => {
                 </div>
               </div>
               <div
-                className="relative mt-2"
+                className="relative"
                 onMouseEnter={() => handleMouseEnter(setIsAboutOpen)}
                 onMouseLeave={() => handleMouseLeave(setIsAboutOpen, aboutRef, setAboutTimeout)}
+                onFocus={() => handleFocus(setIsAboutOpen)}
+                onBlur={() => handleBlur(setIsAboutOpen, setAboutTimeout)}
+                ref={aboutRef}
               >
-                <button
-                  className="text-black hover:bg-red-700 hover:text-white block px-4 py-2 rounded-md text-base font-medium flex items-center w-full"
-                >
+                <button className="text-black hover:bg-red-700 hover:text-white block px-4 py-2 rounded-md text-base font-medium flex items-center">
                   About
                   <FaCaretDown className="ml-1" />
                 </button>
                 <div
-                  className={`absolute left-0 mt-2 w-full bg-white shadow-lg rounded-lg ${isAboutOpen ? "block" : "hidden"} z-40`}
+                  className={`absolute left-0 mt-2 w-48 bg-white shadow-lg rounded-lg ${isAboutOpen ? "block" : "hidden"} z-40`}
                 >
                   <Link
                     to="/about-company"

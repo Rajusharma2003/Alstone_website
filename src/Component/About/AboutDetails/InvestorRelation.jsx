@@ -1,8 +1,11 @@
 import React from 'react'
+import Innovations from './Innovations'
 
 const InvestorRelation = () => {
   return (
-    <div>InvertorRelation</div>
+    <div>
+      <Innovations/>
+    </div>
   )
 }
 
