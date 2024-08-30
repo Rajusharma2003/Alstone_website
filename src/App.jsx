@@ -14,6 +14,7 @@ import Innovations from './Component/About/AboutDetails/Innovations';
 import BathFitting from './Component/Product/ProductDetails/BathFitting'
 import InvestorRelation from './Component/About/AboutDetails/InvestorRelation';
 import Download from './Component/Download/Download';
+import ProductDetails from './Component/ProductDiscreption/ProductDiscreption';
 
 
 
@@ -33,6 +34,7 @@ function App() {
       <Route path="/innovation" element={<Innovations/>} />
       <Route path="/investor-relations" element={<InvestorRelation/>} />
       <Route path="/download" element={<Download/>} />
+      <Route path="/product-details/:id" element={<ProductDetails />} />
     </Routes>
   </Router>
 

@@ -1,13 +1,10 @@
 import React from 'react';
 import ProductRow from './FaucetsUI';
-import { product1, product10, product11, product12, product13, product14, product15, product16, product17, product18, product19, product2, product20, product21, product22, product23, product24, product25, product26, product27, product28, product29, product3, product30, product31, product32, product33, product34, product35, product36, product37, product38, product39, product4, product40, product41, product42, product43, product44, product45, product46, product47, product48, product49, product5, product50, product6, product7, product8, product9 } from './FaucetsAllData';
+import { product1, product2, product3 , product4 , product5 , product6 , product7,  product8,  product9, product10, product11, product12, product13,  product14, product15, product16, product17, product18, product19, product20, product21, product22, product23, product24, product25,product26, product27, product28, product29, product30, product31, product32, product33, product34,product35,product36,product37,product38,product39,product40, product41, product42 ,product43, product44, product45 , product46 , product47, product48 , product49 , product50 } from './FaucetsAllData.js';
 import Footer from '../../../Footer/Footer';
 
 
 const Faucets = () => {
-
-
-
 
   return (
     <>
@@ -21,7 +18,7 @@ const Faucets = () => {
         {/* Text on the left side */}
         <p className="absolute left-1/4 top-1/3 transform -translate-y-1/2 text-white text-xl bg-black bg-opacity-50 p-4 rounded-lg">
           FAUCETS
-        </p>
+        </p>  
       </div>
 
       {/* ProductRow component to display products */}
@@ -77,8 +74,10 @@ const Faucets = () => {
       <ProductRow products={product50}/>  
 
 
-      {/* footer */}
-      <Footer/>
+      {/* This is a footer section */}
+      <div className="mt-10">
+        <Footer/>
+    </div>
     </>
   );
 };

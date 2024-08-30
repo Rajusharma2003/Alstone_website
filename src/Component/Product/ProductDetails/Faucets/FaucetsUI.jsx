@@ -1,5 +1,7 @@
 
 const ProductRow = ({ products = [] }) => {
+
+  console.log("prorrrr"  , products)
   return (
     <div className="w-9/12 mx-auto p-6">
       <div className="flex flex-wrap gap-4 sm:flex-nowrap">
@@ -21,6 +23,9 @@ const ProductRow = ({ products = [] }) => {
 };
 
 export default ProductRow;
+
+
+
 
 
 

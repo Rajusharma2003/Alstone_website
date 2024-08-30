@@ -1,7 +1,12 @@
 import React from 'react';
-import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp } from 'react-icons/fa';
+import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp, FaArrowUp } from 'react-icons/fa';
 
 const Footer = () => {
+  // Function to handle scroll to top
+  const handleScrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div>
       <footer className="bg-gray-800 text-white py-12">
@@ -128,8 +133,7 @@ const Footer = () => {
             <p className="text-gray-400 mt-2">
               Email: <a href="mailto:alstonesanitaryware@gmail.com" className="hover:text-white">alstonesanitaryware@gmail.com</a>
             </p>
-      <p className='mt-9'>@Alstone All Rights Reserved by Designed by SHOPWEB</p>
-
+            <p className='mt-9'>@Alstone All Rights Reserved by Designed by SHOPWEB</p>
           </div>
         </div>
       </footer>
@@ -137,15 +141,22 @@ const Footer = () => {
       {/* WhatsApp Icon */}
       <a
         href="https://wa.me/9810069551" // Replace with your WhatsApp number
-        className="fixed bottom-10 right-10 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600"
+        className="fixed bottom-28 right-10 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600"
         target="_blank"
         rel="noopener noreferrer"
       >
-        <FaWhatsapp className="text-2xl" />
+        <FaWhatsapp className="text-3xl" />
       </a>
 
+      {/* Scroll to Top Button */}
+      <button
+        onClick={handleScrollToTop}
+        className="fixed bottom-10 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600"
+      >
+        <FaArrowUp className="text-2xl" />
+      </button>
     </div>
   );
-}
+};
 
 export default Footer;
