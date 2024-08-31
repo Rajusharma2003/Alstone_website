@@ -1,11 +1,32 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaInstagram, FaFacebookF, FaTwitter, FaLinkedinIn, FaYoutube, FaWhatsapp, FaArrowUp } from 'react-icons/fa';
 
+import catalog from '../../Images/ALSTONECatalog.pdf'
+
+
+
 const Footer = () => {
+
+  const [showPopup, setShowPopup] = useState(false);
+
+
+
   // Function to handle scroll to top
   const handleScrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // this is for whatsapp pop up
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setShowPopup(true);
+      setTimeout(() => {
+        setShowPopup(false);
+      }, 2000); // Popup hides after 2 seconds
+    }, 4000); // Popup shows every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <div>
@@ -24,10 +45,10 @@ const Footer = () => {
                   <h3 className="text-lg font-semibold">Download Catalogues</h3>
                   <ul className="space-y-2">
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-white">Faucet Catalogue</a>
+                      <a href={catalog} className="text-gray-400 hover:text-white">Faucet Catalogue</a>
                     </li>
                     <li>
-                      <a href="#" className="text-gray-400 hover:text-white">Bath Fittings Catalogue</a>
+                      <a href={catalog} className="text-gray-400 hover:text-white">Bath Fittings Catalogue</a>
                     </li>
                   </ul>
                 </div>
@@ -127,31 +148,44 @@ const Footer = () => {
             <p className="text-gray-400 mt-2">
               Alstone Sanitaryware No. 262, Swarn Park, Udyog Nagar Mundka, Mundaka, New Delhi-110041, Delhi, India
             </p>
+
+            <div>
             <p className="text-gray-400 mt-2">
               Phone: 9810069551, 9810059551
             </p>
             <p className="text-gray-400 mt-2">
               Email: <a href="mailto:alstonesanitaryware@gmail.com" className="hover:text-white">alstonesanitaryware@gmail.com</a>
             </p>
+            </div>
+            
             <p className='mt-9'>@Alstone All Rights Reserved by Designed by SHOPWEB</p>
           </div>
         </div>
       </footer>
+      <div className="fixed bottom-24 right-10 flex flex-col items-center">
+      {/* Popup Message */}
+      {showPopup && (
+        <div className="absolute bottom-16 right-10  w-64 h-24 bg-white text-black p-4 rounded-lg shadow-lg border border-gray-300 transform scale-100 transition-transform duration-300 ease-in-out flex flex-col items-center justify-center">
+        <p className="text-lg font-semibold mb-2">Contact Us</p>
+        <p className="text-sm">We're here to help you!</p>
+      </div>
+      )}
 
       {/* WhatsApp Icon */}
       <a
         href="https://wa.me/9810069551" // Replace with your WhatsApp number
-        className="fixed bottom-28 right-10 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600"
+        className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FaWhatsapp className="text-3xl" />
       </a>
+    </div>
 
       {/* Scroll to Top Button */}
       <button
         onClick={handleScrollToTop}
-        className="fixed bottom-10 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600"
+        className="fixed bottom-8 right-10 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600"
       >
         <FaArrowUp className="text-2xl" />
       </button>
