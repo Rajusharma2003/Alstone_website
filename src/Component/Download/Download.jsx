@@ -26,7 +26,7 @@ const Download = () => {
             <img
               src="https://www.alstonejindal.in/sink/cat1.jpg"
               alt="Sink 1"
-              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer"
+              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer ransition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
           </a>
           <p className="text-center text-gray-700 font-semibold">Sink 1</p>
@@ -36,7 +36,7 @@ const Download = () => {
             <img
               src="https://www.alstonejindal.in/sink/cat2.jpg"
               alt="Sink 2"
-              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer"
+              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer ransition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
           </a>
           <p className="text-center text-gray-700 font-semibold">Sink 2</p>
@@ -46,7 +46,7 @@ const Download = () => {
             <img
               src="https://www.alstonejindal.in/sink/cat3.jpg"
               alt="Sink 3"
-              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer"
+              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer ransition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
           </a>
           <p className="text-center text-gray-700 font-semibold">Sink 3</p>
@@ -56,7 +56,7 @@ const Download = () => {
             <img
               src="https://www.alstonejindal.in/sink/cat4.jpg"
               alt="Sink 4"
-              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer"
+              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer ransition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
           </a>
           <p className="text-center text-gray-700 font-semibold">Sink 4</p>
@@ -70,7 +70,7 @@ const Download = () => {
             <img
               src="https://www.alstonejindal.in/sink/cat5.jpg"
               alt="Sink 1"
-              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer"
+              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer ransition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
           </a>
           <p className="text-center text-gray-700 font-semibold">Sink 5</p>
@@ -80,7 +80,7 @@ const Download = () => {
             <img
               src="https://www.alstonejindal.in/sink/cat6.jpg"
               alt="Sink 2"
-              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer"
+              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer ransition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
           </a>
           <p className="text-center text-gray-700 font-semibold">Sink 6</p>
@@ -90,7 +90,7 @@ const Download = () => {
             <img
               src="https://www.alstonejindal.in/sink/cat7.jpg"
               alt="Sink 3"
-              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer"
+              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer ransition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
           </a>
           <p className="text-center text-gray-700 font-semibold">Sink 7</p>
@@ -100,7 +100,7 @@ const Download = () => {
             <img
               src="https://www.alstonejindal.in/sink/cat7.jpg"
               alt="Sink 4"
-              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer"
+              className="w-full h-auto sm:h-[250px] md:h-[300px] object-cover rounded-lg mb-4 cursor-pointer ransition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
           </a>
           <p className="text-center text-gray-700 font-semibold">Sink 8</p>

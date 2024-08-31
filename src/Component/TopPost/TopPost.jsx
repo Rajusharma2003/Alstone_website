@@ -18,26 +18,26 @@ const TopPost = () => {
       </div>
 
       {/* Right Section */}
-      <div className='flex justify-center md:justify-start gap-4'>
+      <div className='flex justify-center md:justify-start gap-4 '>
         <a 
           href="https://facebook.com/alstonesanitaryware" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className='text-white text-2xl md:text-2xl'>
+          className='text-white text-2xl md:text-2xl transition-transform duration-300 ease-in-out transform hover:scale-125'>
           <FontAwesomeIcon icon={faFacebookF} />
         </a>
         <a 
           href="https://instagram.com/alstonejindal" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className='text-white text-2xl md:text-2xl'>
+          className='text-white text-2xl md:text-2xl transition-transform duration-300 ease-in-out transform hover:scale-125'>
           <FontAwesomeIcon icon={faInstagram} />
         </a>
         <a 
           href="https://www.linkedin.com" 
           target="_blank" 
           rel="noopener noreferrer" 
-          className='text-white text-2xl md:text-2xl'>
+          className='text-white text-2xl md:text-2xl transition-transform duration-300 ease-in-out transform hover:scale-125'>
           <FontAwesomeIcon icon={faLinkedinIn} />
         </a>
       </div>

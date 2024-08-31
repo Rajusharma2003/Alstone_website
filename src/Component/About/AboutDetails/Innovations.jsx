@@ -73,17 +73,17 @@ const Innovations = () => {
             <img
               src="https://www.alstonejindal.in/image/img1.jpg"
               alt="Image 1"
-              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md"
+              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md   transition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
             <img
               src="https://www.alstonejindal.in/image/img2.jpg"
               alt="Image 2"
-              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md"
+              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md  transition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
             <img
               src="https://www.alstonejindal.in/image/img3.jpg"
               alt="Image 3"
-              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md"
+              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md  transition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
           </div>
 
@@ -92,17 +92,17 @@ const Innovations = () => {
             <img
               src="https://www.alstonejindal.in/image/img4.jpg"
               alt="Image 1"
-              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md"
+              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md  transition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
             <img
               src="https://www.alstonejindal.in/image/img5.jpg"
               alt="Image 2"
-              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md"
+              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md  transition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
             <img
               src="https://www.alstonejindal.in/image/img6.jpg"
               alt="Image 3"
-              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md"
+              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md transition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
           </div>
           {/* third Image Row */}
@@ -110,17 +110,17 @@ const Innovations = () => {
             <img
               src="https://www.alstonejindal.in/image/img7.jpg"
               alt="Image 1"
-              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md"
+              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md  transition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
             <img
               src="https://www.alstonejindal.in/image/img1.jpg"
               alt="Image 2"
-              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md"
+              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md  transition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
             <img
               src="https://www.alstonejindal.in/image/img4.jpg"
               alt="Image 3"
-              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md"
+              className="w-full lg:w-1/3 h-auto object-cover rounded-md shadow-md  transition-transform transform hover:scale-110 duration-300 ease-in-out"
             />
           </div>
         </div>

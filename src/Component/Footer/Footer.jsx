@@ -9,7 +9,8 @@ const Footer = () => {
 
   const [showPopup, setShowPopup] = useState(false);
 
-
+   
+  const togglePopup = () => setShowPopup(!showPopup);
 
   // Function to handle scroll to top
   const handleScrollToTop = () => {
@@ -162,24 +163,43 @@ const Footer = () => {
           </div>
         </div>
       </footer>
+
+      {/* This is whatsapp section  */}
       <div className="fixed bottom-24 right-10 flex flex-col items-center">
       {/* Popup Message */}
       {showPopup && (
-        <div className="absolute bottom-16 right-10  w-64 h-24 bg-white text-black p-4 rounded-lg shadow-lg border border-gray-300 transform scale-100 transition-transform duration-300 ease-in-out flex flex-col items-center justify-center">
-        <p className="text-lg font-semibold mb-2">Contact Us</p>
-        <p className="text-sm">We're here to help you!</p>
+        <div className="absolute bottom-16 right-10 w-64 h-auto bg-white text-black p-4 rounded-lg shadow-lg border border-gray-300 transform scale-100 transition-transform duration-300 ease-in-out flex flex-col items-center justify-center">
+        <p className="text-lg font-semibold mb-2">Need Assistance?</p>
+        <p className="text-sm mb-4 text-blue-500">Our team is always ready to help you with any questions or issues you may have. Feel free to reach out for support or inquiries!</p>
+        <p className="text-sm text-blue-500">Click the WhatsApp icon to start a chat with us. We're here to provide the best assistance possible.</p>
       </div>
+      
       )}
 
       {/* WhatsApp Icon */}
       <a
         href="https://wa.me/9810069551" // Replace with your WhatsApp number
-        className="bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600"
+        className={`bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-transform duration-300 ${showPopup ? 'animate-buzz' : ''}`}
         target="_blank"
         rel="noopener noreferrer"
+        onClick={togglePopup} // Toggle popup on click
       >
         <FaWhatsapp className="text-3xl" />
       </a>
+
+      {/* Add custom styles for the buzz animation */}
+      <style jsx>{`
+        @keyframes buzz {
+          0% { transform: translateX(0); }
+          25% { transform: translateX(-5px); }
+          50% { transform: translateX(5px); }
+          75% { transform: translateX(-5px); }
+          100% { transform: translateX(0); }
+        }
+        .animate-buzz {
+          animation: buzz 0.5s infinite;
+        }
+      `}</style>
     </div>
 
       {/* Scroll to Top Button */}

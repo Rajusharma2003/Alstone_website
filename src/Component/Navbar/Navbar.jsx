@@ -107,7 +107,7 @@ const Navbar = () => {
               <div className="hidden sm:flex sm:ml-6 space-x-4 h-10 mt-8">
                 <Link
                   to="/"
-                  className="text-black hover:bg-red-700 hover:text-white px-4 py-2 rounded-md text-lg font-medium transition-all duration-200 ease-in-out"
+                  className="text-black hover:bg-red-700 hover:text-white px-4 py-2 rounded-md text-lg font-medium transition-transform transform hover:scale-110 duration-300 ease-in-out"
                 >
                   Home
                 </Link>
@@ -122,7 +122,7 @@ const Navbar = () => {
                   ref={productsRef}
                 >
                   <button
-                    className="text-black hover:bg-red-700 hover:text-white px-4 py-2 rounded-md text-lg font-medium flex items-center"
+                    className="text-black hover:bg-red-700 hover:text-white px-4 py-2 rounded-md text-lg font-medium flex items-center transition-transform transform hover:scale-110 duration-300 ease-in-out"
                   >
                     Products
                     <FaCaretDown className="ml-1" />
@@ -132,13 +132,13 @@ const Navbar = () => {
                   >
                     <Link
                       to="/faucets"
-                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white"
+                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white transition-transform transform hover:scale-110 duration-300 ease-in-out rounded-md"
                     >
                       Faucets
                     </Link>
                     <Link
                       to="/bathittings"
-                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white"
+                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white transition-transform transform hover:scale-110 duration-300 ease-in-out rounded-md"
                     >
                       Bath Fittings
                     </Link>
@@ -155,7 +155,7 @@ const Navbar = () => {
                   ref={aboutRef}
                 >
                   <button
-                    className="text-black hover:bg-red-700 hover:text-white px-4 py-2 rounded-md text-lg font-medium flex items-center"
+                    className="text-black hover:bg-red-700 hover:text-white px-4 py-2 rounded-md text-lg font-medium flex items-center transition-transform transform hover:scale-110 duration-300 ease-in-out"
                   >
                     About
                     <FaCaretDown className="ml-1" />
@@ -165,25 +165,25 @@ const Navbar = () => {
                   >
                     <Link
                       to="/about-company"
-                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white"
+                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white transition-transform transform hover:scale-110 duration-300 ease-in-out rounded-md"
                     >
                       About Company
                     </Link>
                     <Link
                       to="/innovation"
-                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white"
+                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white transition-transform transform hover:scale-110 duration-300 ease-in-out rounded-md"
                     >
                       Innovation
                     </Link>
                     <Link
                       to="/awards-achievements"
-                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white"
+                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white transition-transform transform hover:scale-110 duration-300 ease-in-out rounded-md"
                     >
                       Awards & Achievements
                     </Link>
                     <Link
                       to="/investor-relations"
-                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white"
+                      className="block px-4 py-2 text-black hover:bg-red-700 hover:text-white transition-transform transform hover:scale-110 duration-300 ease-in-out rounded-md"
                     >
                       Investor Relations
                     </Link>
@@ -192,14 +192,14 @@ const Navbar = () => {
 
                 <Link
                   to="/contact"
-                  className="text-black hover:bg-red-700 hover:text-white px-4 py-2 rounded-md text-lg font-medium"
+                  className="text-black hover:bg-red-700 hover:text-white px-4 py-2 rounded-md text-lg font-medium transition-transform transform hover:scale-110 duration-300 ease-in-out"
                 >
                   Contact
                 </Link>
 
                 <Link
                   to="/download"
-                  className="text-black hover:bg-red-700 hover:text-white px-4 py-2 rounded-md text-lg font-medium"
+                  className="text-black hover:bg-red-700 hover:text-white px-4 py-2 rounded-md text-lg font-medium transition-transform transform hover:scale-110 duration-300 ease-in-out"
                 >
                   Download
                 </Link>

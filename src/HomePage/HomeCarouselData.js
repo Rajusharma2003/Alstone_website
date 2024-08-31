@@ -2,7 +2,7 @@ import bannerImg from '../Images/banner1.jpg';
 
 const carouselData = [
     {
-        image: bannerImg
+        image: "https://img.freepik.com/premium-photo/modern-kitchen-sink-with-chrome-faucet_1153647-435.jpg?ga=GA1.1.2025242279.1724825934&semt=ais_hybrid"
 
     },
     {
